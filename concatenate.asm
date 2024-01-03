@@ -38,6 +38,9 @@ call print_string
 lea si,buffer
 call input_string
 
+mov byte ptr [si],' '
+inc si
+
 lea dx,msg2
 call print_string
 
